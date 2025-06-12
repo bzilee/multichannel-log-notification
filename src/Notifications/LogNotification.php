@@ -21,7 +21,7 @@ class LogNotification extends Notification implements ShouldQueue
     {
         $this->message = $message;
         $this->channels = $channels;
-        $this->onQueue('multichannel-logs'); // File spécifique
+        $this->onQueue('multichannel-logs');
     }
 
     public function via($notifiable)
